@@ -1,3 +1,5 @@
+enemies = 1
+
 def increase_enemies():
     enemies = 2
     print(f"enemies inside function: {enemies}")
@@ -6,10 +8,19 @@ def increase_enemies():
 increase_enemies()
 #print(f"enemies outside function: {enemies}")
 
+# player_health has global scope
+player_health = 10
+
 # Local scope
 def drink_potion():
     potion_strength = 2
-    print(potion_strength)
+    print(player_health)
 
 drink_potion()
-print(potion_strength)
+
+player_health = 10
+
+if 3>2:
+    a_variable = 12
+
+
