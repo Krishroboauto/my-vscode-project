@@ -12,6 +12,8 @@
 # print(my_Screen.canvheight)
 # my_Screen.exitonclick()
 
+#check code in pypi for packages
+
 from prettytable  import PrettyTable
 table = PrettyTable()
 

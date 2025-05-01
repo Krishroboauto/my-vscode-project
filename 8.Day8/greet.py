@@ -10,3 +10,9 @@ def greet_name(name):
 
 greet_name("Billie")
 
+def greet_new(name, location):
+    print(f"Hello {name}")
+    print(f"Are you from {location}")
+
+greet_new("advaith", "enschede")
+greet_new(location = "London", name = "Angela")

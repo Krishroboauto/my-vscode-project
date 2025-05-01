@@ -1,15 +1,15 @@
-class User:  #Pascal case of naming
-    
-    def __init__(self, user_id, username):
-        self.id = user_id
-        self.username = username
-        print("new user is being created...")
+from question_model import Question
+from data import question_data
 
-user_1 = User("001", "Angela")
+question_bank = []
 
+for item in question_data:
+    question_text = item["text"]
+    question_answer = item["answer"]
+    new_question = Question(question_text, question_answer)
+    question_bank.append(new_question)
 
+print(question_bank[0].answer)
 
-print(user_1.username)
-print(user_1.id)
 
 
